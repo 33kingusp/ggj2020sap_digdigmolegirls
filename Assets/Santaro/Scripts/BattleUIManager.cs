@@ -25,7 +25,7 @@ public class BattleUIManager : MonoBehaviour {
     /// タイトルフェーズ管理オブジェクト
     /// </summary>
     [SerializeField]
-    private GameObject titlePhaseManaer;
+    private GameObject titlePhaseManaer = default;
 
     [SerializeField] private List<AudioClip> countSE = default;
 

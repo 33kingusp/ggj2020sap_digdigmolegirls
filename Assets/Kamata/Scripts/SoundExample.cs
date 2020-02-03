@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class SoundExample : MonoBehaviour
 {
-    [SerializeField] private AudioClip bgmClip;
-    [SerializeField] private AudioClip seClip;
+    [SerializeField] private AudioClip bgmClip = default;
+    [SerializeField] private AudioClip seClip = default;
     
     private void OnGUI()
     {

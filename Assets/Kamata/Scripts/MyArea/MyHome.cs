@@ -23,7 +23,7 @@ public class MyHome : MonoBehaviour {
     [SerializeField] private BattleUIManager battleUIManager = null;
 
     [SerializeField]
-    private GameObject explosion;
+    private GameObject explosion = default;
 
     /// <summary>
     /// シーン開始時点のデフォルト用スプライト

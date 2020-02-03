@@ -11,35 +11,35 @@ public class TitlePhaseManager : MonoBehaviour
     /// 次のフェーズの引き継ぎ先となる管理オブジェクト
     /// </summary>
     [SerializeField]
-    private GameObject battleUIManager;
+    private GameObject battleUIManager = default;
 
     /// <summary>
     /// タイトルヘッダーを描画するキャンバス
     /// </summary>
     [SerializeField]
-    private GameObject titleUICanvas;
+    private GameObject titleUICanvas = default;
 
     //　カウントダウンのキャンバス
     [SerializeField]
-    private GameObject countDownCanvas;
+    private GameObject countDownCanvas = default;
 
     /// <summary>
     /// 開始位置オブジェクト
     /// </summary>
     [SerializeField]
-    private GameObject[] startingTriggerAreas;
+    private GameObject[] startingTriggerAreas = default;
 
     /// <summary>
     /// 初期表示を隠すためだけの暗幕オブジェクト
     /// </summary>
     [SerializeField]
-    private GameObject blackBackground;
+    private GameObject blackBackground = default;
 
     /// <summary>
     /// トランジションを行う管理オブジェクト
     /// </summary>
     [SerializeField]
-    private Fade fader;
+    private Fade fader = default;
 
     /// <summary>
     /// 開始位置に居る準備完了プレイヤーの数

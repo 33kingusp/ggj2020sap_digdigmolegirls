@@ -5,10 +5,10 @@ using UnityEngine;
 public class StartingTrigger : MonoBehaviour {
 
     [SerializeField]
-    private TitlePhaseManager titlePhaseManager;
+    private TitlePhaseManager titlePhaseManager = default;
 
     [SerializeField]
-    private PlayerNumber playerNumber;
+    private PlayerNumber playerNumber = default;
 
     /// <summary>
     /// 現在プレイヤーがこの枠の中にいるかどうか

@@ -23,10 +23,10 @@ public class InputManager : MonoBehaviour {
     /// ＊インスペクターにて設定
     /// </summary>
     [SerializeField]
-    private GameObject playerPrefab;
+    private GameObject playerPrefab = default;
 
     [SerializeField]
-    private BattleUIManager battleUIManager;
+    private BattleUIManager battleUIManager = default;
 
     /// <summary>
     /// プレイヤーごとの初期Rotation
@@ -53,22 +53,22 @@ public class InputManager : MonoBehaviour {
     /// キーボード制御用InputAction
     /// </summary>
     [SerializeField]
-    private InputActionAsset[] PlayerKeyboardInputActions;
+    private InputActionAsset[] PlayerKeyboardInputActions = default;
 
     /// <summary>
     /// プレイヤー初期スプライト
     /// </summary>
     [SerializeField]
-    private Sprite[] PlayerDefaultSprites;
+    private Sprite[] PlayerDefaultSprites = default;
 
     /// <summary>
     /// プレイヤーアニメーター
     /// </summary>
     [SerializeField]
-    private RuntimeAnimatorController[] PlayerAnimators;
+    private RuntimeAnimatorController[] PlayerAnimators = default;
 
-    [SerializeField] private CinemachineTargetGroup targetGroup;
-    
+    [SerializeField] private CinemachineTargetGroup targetGroup = default;
+
     /// <summary>
     /// ゲーム開始の準備が整っているかどうか
     /// </summary>

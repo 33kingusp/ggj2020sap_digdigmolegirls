@@ -12,8 +12,10 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
 
     private float _audioBGMPausingTime;
     
-    private void Awake()
+    private new void Awake()
     {
+        base.Awake();
+
         if (_bgmAudioSource == null)
         {
             _bgmAudioSource = gameObject.AddComponent<AudioSource>();
