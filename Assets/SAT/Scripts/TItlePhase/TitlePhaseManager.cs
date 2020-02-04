@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TitlePhaseManager : MonoBehaviour
+public class TitlePhaseManager : SingletonMonoBehaviour<TitlePhaseManager>
 {
     [SerializeField] private AudioClip acceptSE = default;
 
@@ -46,7 +46,8 @@ public class TitlePhaseManager : MonoBehaviour
     /// </summary>
     private int readyForPlayerCount;
 
-    public void Start() {
+    public void Start()
+    {
         this.readyForPlayerCount = 0;
 
         // フェーズ遷移時の共通処理呼び出し
@@ -92,7 +93,7 @@ public class TitlePhaseManager : MonoBehaviour
             // 開始位置オブジェクト表示
             foreach (var obj in this.startingTriggerAreas) {
                 obj.SetActive(true);
-                obj.GetComponent<StartingTrigger>().Start();
+                //obj.GetComponent<StartingTrigger>().Start();
             }
 
             this.fader.FadeOut(time, new Action(() => {

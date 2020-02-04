@@ -21,7 +21,6 @@ public class SingletonMonoBehaviour<T> : MonoBehaviour where T : SingletonMonoBe
 	
 	protected void Awake()
 	{
-        Debug.Log("Awake0");
 		CheckInstance();
 	}
 	
